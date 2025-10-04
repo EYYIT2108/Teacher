@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>teacher — Happy Teacher's Day</title>
+  <link rel="stylesheet" href="Teacher.css" />
+</head>
+<body>
+  <!-- particle layer -->
+  <div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
+
+  <!-- HOME -->
+  <main class="home" id="home" aria-hidden="false">
+    <button id="openLetter" class="big-cta" aria-label="Happy Teacher's Day My Love">
+      💌 Happy Teacher's Day My Love
+    </button>
+    <small class="hint">Tap to open your surprise ✨</small>
+  </main>
+
+  <!-- LETTER PAGE (overlay) -->
+  <section class="letter-page" id="letterPage" aria-hidden="true" tabindex="-1">
+    <div class="topbar">
+      <button id="closeLetter" class="icon-btn" aria-label="Close letter">✕</button>
+    </div>
+
+    <div class="letter-wrap">
+      <!-- LEFT: small video -->
+      <aside class="video-col reveal-on-scroll" data-reveal>
+        <div class="video-box">
+          <h4 class="video-title">A small clip</h4>
+          <video id="heroVideo" controls preload="metadata" playsinline>
+            <source src="vid1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </aside>
+
+      <!-- CENTER: the letter -->
+      <article class="message-panel reveal-on-scroll" data-reveal>
+        <div class="envelope-flap" aria-hidden="true"></div>
+
+        <!-- sticker group (visible when open) -->
+        <div class="stickers" aria-hidden="true">
+          <!-- stickers: visible on panel (3 cats, 2 bears, 3 flowers, rose, tulips, 2 pengs) -->
+          <div class="sticker cat-a" aria-hidden="true"><!-- svg inside css-managed size --></div>
+          <div class="sticker cat-b" aria-hidden="true"></div>
+          <div class="sticker cat-c" aria-hidden="true"></div>
+
+          <div class="sticker bear-a" aria-hidden="true"></div>
+          <div class="sticker bear-b" aria-hidden="true"></div>
+
+          <div class="sticker f-a" aria-hidden="true"></div>
+          <div class="sticker f-b" aria-hidden="true"></div>
+          <div class="sticker f-c" aria-hidden="true"></div>
+
+          <div class="sticker rose" aria-hidden="true"></div>
+          <div class="sticker tulip-p" aria-hidden="true"></div>
+          <div class="sticker tulip-b" aria-hidden="true"></div>
+
+          <div class="sticker peng-a" aria-hidden="true"></div>
+          <div class="sticker peng-b" aria-hidden="true"></div>
+        </div>
+
+        <!-- decorative corners -->
+        <div class="flower-deco top-left" aria-hidden="true"></div>
+        <div class="flower-deco bottom-right" aria-hidden="true"></div>
+
+        <div class="panel-header">
+          <div class="kawaii-cat" aria-hidden="true"></div>
+          <h1 class="title">To my dearest</h1>
+        </div>
+
+        <div class="message-content" id="messageContent" tabindex="0" aria-label="Personal message">
+          <p>To my dearest</p>
+          <p>My baby,</p>
+
+          <p>Happy Teacher's Day! Thank you for being patient, kind, and inspiring not only to your students but to me every day. Your warmth and smile make the world a gentler place. And thank you din palagi sa pag aasikaso sakin, sorry din sa pagiging makulit ko HAHAHAHA thank you din sa mga time like gala natin, I wish na sana gumaling na si tito. and baby always remember that I love you so so much ha? and baby, kahit gaano kahirap ang journey natin always belive in god, there's always a challenge but alam ko namn na kakayanin mo yun, kakayanin natin together. to my future teacher baby, Ma'am Melanie, my baby,  I'm so proud of you I LOVE YOUUUUUUUUUU MUAH!.</p>
+
+          <p>With all my love,</p>
+          <p><strong>[Jasper Mauzar]</strong></p>
+        </div>
+      </article>
+
+      <!-- RIGHT: gallery (photos clickable links) -->
+      <aside class="media-panel reveal-on-scroll" data-reveal>
+        <h2 class="media-title">Photos & Memories</h2>
+
+        <div class="media-grid">
+          <!-- each thumb is a link that opens the image in a new tab -->
+          <a class="thumb-link" href="pic1.jpg" target="_blank" rel="noopener" aria-label="Open photo 1">
+            <div class="thumb">
+              <img src="pic1.jpg" alt="pic1" />
+              <span class="photo-icon" data-icon="cat"></span>
+            </div>
+          </a>
+
+          <a class="thumb-link" href="pic2.jpg" target="_blank" rel="noopener" aria-label="Open photo 2">
+            <div class="thumb">
+              <img src="pic2.jpg" alt="pic2" />
+              <span class="photo-icon" data-icon="bear"></span>
+            </div>
+          </a>
+
+          <a class="thumb-link" href="pic3.jpg" target="_blank" rel="noopener" aria-label="Open photo 3">
+            <div class="thumb">
+              <img src="pic3.jpg" alt="pic3" />
+              <span class="photo-icon" data-icon="flower"></span>
+            </div>
+          </a>
+
+          <a class="thumb-link" href="pic4.jpg" target="_blank" rel="noopener" aria-label="Open photo 4">
+            <div class="thumb">
+              <img src="pic4.jpg" alt="pic4" />
+              <span class="photo-icon" data-icon="tulip"></span>
+            </div>
+          </a>
+
+          <a class="thumb-link" href="pic5.jpg" target="_blank" rel="noopener" aria-label="Open photo 5">
+            <div class="thumb">
+              <img src="pic5.jpg" alt="pic5" />
+              <span class="photo-icon" data-icon="rose"></span>
+            </div>
+          </a>
+
+          <a class="thumb-link" href="pic6.jpg" target="_blank" rel="noopener" aria-label="Open photo 6">
+            <div class="thumb">
+              <img src="pic6.jpg" alt="pic6" />
+              <span class="photo-icon" data-icon="penguin"></span>
+            </div>
+          </a>
+
+          <a class="thumb-link" href="pic7.jpg" target="_blank" rel="noopener" aria-label="Open photo 7">
+            <div class="thumb">
+              <img src="pic7.jpg" alt="pic7" />
+              <span class="photo-icon" data-icon="cat"></span>
+            </div>
+          </a>
+
+          <a class="thumb-link" href="pic8.jpg" target="_blank" rel="noopener" aria-label="Open photo 8">
+            <div class="thumb">
+              <img src="pic8.jpg" alt="pic8" />
+              <span class="photo-icon" data-icon="heart"></span>
+            </div>
+          </a>
+        </div>
+
+        <p class="media-note">Tap any photo to view full size</p>
+      </aside>
+    </div>
+
+    <!-- bottom thank you message (mobile and desktop) -->
+    <footer class="thanks reveal-on-scroll" data-reveal>
+      <p>Thank you, my baby. Always yours 💋</p>
+    </footer>
+  </section>
+
+  <script src="Teacher.js"></script>
+</body>
+</html>
